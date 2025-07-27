@@ -1,0 +1,19 @@
+{
+  "name": "golf-bay-booking",
+  "version": "1.0.0",
+  "description": "Golf Bay Booking System with PesaPal Integration",
+  "main": "server/index.js",
+  "scripts": {
+    "dev": "concurrently \"npm run server\" \"npm run client\"",
+    "server": "cd server && npm run dev",
+    "client": "cd client && npm start",
+    "build": "cd client && npm run build",
+    "install-all": "npm install && cd server && npm install && cd ../client && npm install"
+  },
+  "keywords": ["booking", "golf", "pesapal", "react", "nodejs"],
+  "author": "",
+  "license": "MIT",
+  "devDependencies": {
+    "concurrently": "^7.6.0"
+  }
+}
